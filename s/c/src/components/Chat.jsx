@@ -3,7 +3,7 @@ import { io } from 'socket.io-client';
 import MessageList from './MessageList';
 import MessageInput from './MessageInput';
 
-const socket = io('http://localhost:5000');
+const socket = io("https://your-backend-service-url.onrender.com");
 
 function Chat({ username }) {
     const [messages, setMessages] = useState([]);
